@@ -1,0 +1,22 @@
+﻿ul {
+    list-style: none;
+}
+
+    ul#mevsim li {
+        color: greenyellow;
+        font-family: Georgia;
+        font-size: 20px;
+        background-color: sandybrown;
+    }
+    .a0 {
+        color:blue;
+        font-weight:bold;
+        font-size:xx-large;
+
+    }
+
+.a1 {
+    color: red;
+    font-style:italic;
+    font-family:'Bauhaus 93';
+}

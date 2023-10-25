@@ -1,0 +1,58 @@
+﻿@model (MVC.Models.Teacher t,MVC.Models.Student s)
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2> @DateTime.Now.ToShortTimeString()</h2>
+
+<h2>Teacher:</h2>
+<h5>@string.Format("{0}-{1}-{2}-{3}",Model.Item1.ID,Model.Item1.Name,Model.Item1.Phone,Model.Item1.Address)</h5>
+
+<h2>Student:</h2>
+<h5>@string.Format("{0}-{1}-{2}",Model.Item2.Number,Model.Item2.Name,Model.Item2.Surname)</h5>
+
+
+
+
+
+@*<h2>Teacher:</h2>
+<h5>@string.Format("{0}-{1}-{2}-{3}",Model.teacher.ID,Model.teacher.Name,Model.teacher.Phone,Model.teacher.Address)</h5>
+
+<h2>Student:</h2>
+<h5>@string.Format("{0}-{1}-{2}",Model.student.Number,Model.student.Name,Model.student.Surname)</h5>
+*@
+@*@{
+    for (int i = 1; i <= 10; i++)
+    {
+        <p>@i</p>
+    }
+    int a = 2,b = 3,c;
+    c = a + b;
+    string []mevsim= new string [] {"İlkbahar","Yaz","Sonbahar","Kış" };
+    int[] numbers = new int[] { 3, 5, 8, 2, 9, 1, 6, 7, 4 };
+}
+<ul id="mevsim">
+    @foreach ( string item in mevsim)
+    {
+        <li>@item</li>
+    }
+</ul>*@
+@*<ul >
+    @for (int i = 0; i <numbers.Lenmodelgth; i++)
+    {
+        /*
+        if (i % 2 == 0)
+        {
+            <li class="a0">@numbers[i]</li>
+
+        }
+        else
+        {
+            <li class="a1">@numbers[i]</li>
+
+        }
+        */
+        <li class="a@(i%2)">@numbers[i]</li>
+    }
+</ul>*@
